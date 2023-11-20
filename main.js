@@ -1,17 +1,21 @@
-function tocaSomAplausos(){
-    document.querySelector("#som_tecla_aplausos").play();   
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();   
 
-document.querySelectorAll('.tecla');
 }
 
 const ListaDeTeclas = document. querySelectorAll('.tecla');
-ListaDeTeclas[2].onclick = tocaSomAplausos
 
 let contador = 0;
 //Estrutura de repetição - Enquanto
-while(contador<9){
-    ListaDeTeclas[0].onclick =
-    contador = 1;
+while(contador<ListaDeTeclas.length){
+    const tecla = tecla [contador]
+    const instrumento = tecla.classList
+    tecla.onclick = function(){
+        const idAudio = `#som_${instrumento}`
+
+    }
+    contador = contador + 1;
+    console.log(instrumento)
 
 
 }
